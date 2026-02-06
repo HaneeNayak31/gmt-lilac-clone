@@ -1,0 +1,16 @@
+import ContactSection from "@/components/contact/ContactSection";
+import FooterSection from "@/components/footer/FooterSection";
+import FindMeSection from "@/components/findme/FindMeSection";
+import MyOfficeSection from "@/components/myoffice/MyOfficeSection";
+import LetsConnect from "@/components/letsconnect/LetsConnect";
+import BookAppointmentSection from "@/components/bookappointment/BookAppointmentSection";
+export default function ContactPage() {
+  return (
+    <section className="">
+      <LetsConnect />
+      <BookAppointmentSection />
+      <MyOfficeSection />
+      <FindMeSection />
+    </section>
+  );
+}

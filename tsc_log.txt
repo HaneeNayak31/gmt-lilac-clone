@@ -1,0 +1,2 @@
+.next/dev/types/validator.ts(77,39): error TS2306: File 'H:/lilac Assignmnet/gmt-assignment/src/app/page.tsx' is not a module.
+.next/types/validator.ts(77,39): error TS2306: File 'H:/lilac Assignmnet/gmt-assignment/src/app/page.tsx' is not a module.
