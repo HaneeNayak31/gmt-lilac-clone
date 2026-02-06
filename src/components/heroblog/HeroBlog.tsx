@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const HeroBlog = () => {
   return (
-    <section className="pt-30 w-full bg-[#fbf6f1] text-[#223614] py-[100px] px-6 font-[var(--font-gopher)]">
+    <section className="pt-30 w-full bg-[var(--color-background)] text-[var(--color-text-primary)] py-[100px] px-6 font-[var(--font-gopher)]">
       <div className="mx-auto max-w-[1420px] grid grid-cols-1 md:grid-cols-2 items-center gap-12 lg:gap-0">
         
         {/* Left Column: Arched Image */}

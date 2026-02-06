@@ -1,13 +1,13 @@
 import React from "react";
 const SubscribeSection = () => {
     return (
-        <section className="w-full bg-[#7E7B46] px-6 py-24 lg:py-40 flex items-center justify-center font-[var(--font-gopher)]">
-      <div className="w-full max-w-[800px] border-[2px] border-white p-8 md:p-16 text-center text-white">
+        <section className="w-full bg-[var(--color-secondary)] px-6 py-24 lg:py-40 flex items-center justify-center font-[var(--font-gopher)]">
+      <div className="w-full max-w-[800px] border-[2px] border-[var(--color-text-primary)] p-8 md:p-16 text-center text-[var(--color-text-primary)]">
         
         {/* Header */}
         <div className="mb-12">
           <h2 
-            className="text-[40px] md:text-[60px] font-medium leading-tight mb-4 animate-in fade-in slide-in-from-bottom-8 duration-[800ms] fill-mode-forwards !text-white"
+            className="text-[40px] md:text-[60px] font-medium leading-tight mb-4 animate-in fade-in slide-in-from-bottom-8 duration-[800ms] fill-mode-forwards text-[var(--color-text-primary)]"
             style={{ animationDelay: '0.4s' }}
           >
             Subscribe
@@ -31,7 +31,7 @@ const SubscribeSection = () => {
             className="flex-grow bg-white text-black px-5 py-4 text-lg font-light focus:outline-none min-w-0"
           />
           <button 
-            className=" border-white border-[1px] text-[#c2bfcb] px-8 py-4 text-sm font-medium uppercase tracking-wider hover:bg-[#c2bfcb] hover:text-black transition-colors duration-300 relative group"
+            className=" border-[var(--color-text-primary)] border-[1px] text-[var(--color-text-primary)] px-8 py-4 text-sm font-medium uppercase tracking-wider hover:bg-[var(--color-text-primary)] hover:text-[var(--color-surface)] transition-colors duration-300 relative group"
             type="submit"
             value="Sign Up"
           >

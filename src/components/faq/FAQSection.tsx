@@ -5,15 +5,15 @@ import Image from "next/image";
 const faqs = [
   { 
     question: "Do you take insurance?",
-    answer: "Answer goes here."
+    answer: "I am an out-of-network provider, which means I do not bill insurance directly. However, I can provide a monthly Superbill that you can submit to your insurance company for potential reimbursement."
   },
   { 
     question: "What are your rates?",
-    answer: "Answer goes here."
+    answer: "My fee is $250 per 50-minute session. Payment is due at the time of service, and I accept all major credit cards and HSA/FSA cards."
   },
   { 
     question: "Do you have any openings?",
-    answer: "Answer goes here."
+    answer: "I currently have a few openings for daytime sessions on Tuesdays and Thursdays. If you are interested, please reach out to schedule a free 15-minute consultation."
   },
 ];
 
@@ -25,14 +25,14 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="w-full bg-[var(--color-background)] px-6 py-20 lg:py-[100px]">
+    <section className="w-full bg-[var(--color-secondary)] px-6 py-20 lg:py-[100px]">
       <div className="mx-auto grid max-w-[1420px] grid-cols-1 gap-12 lg:grid-cols-2  px-4 md:px-10 lg:px-0">
         
         {/* LEFT IMAGE - Arched */}
         <div className="relative flex justify-center lg:justify-center">
           <div className="relative h-[500px] w-full max-w-[463px] lg:h-[695px] overflow-hidden rounded-t-[232px]">
             <Image
-              src="https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/3a7e28f0-28fd-47cd-9857-6c415afed795/myxa69-APKZU4NJcgs-unsplash.jpg?format=2500w"
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
               alt="FAQ Decorative"
               fill
               className="object-cover"
@@ -47,7 +47,7 @@ const FAQSection = () => {
             FAQs
           </h2>
 
-          <div className="flex flex-col border-t border-[var(--color-text-primary)] w-full">
+          <div className="flex flex-col border-t border-[var(--color-text-primary)] w-full text-[var(--color-text-primary)]">
             {faqs.map((faq, index) => (
               <div key={index} className="border-b border-[#223614]">
                 <button

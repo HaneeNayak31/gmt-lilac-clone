@@ -2,9 +2,9 @@ import React from "react";
 
 const BookAppointmentSection = () => {
   return (
-    <section className="w-full bg-[#e5e0da] py-32 px-6 flex flex-col items-center ">
+    <section className="w-full bg-[var(--color-background)] py-32 px-6 flex flex-col items-center ">
       <div className="max-w-4xl">
-        <h2 className="mb-8 text-[68px] font-medium text-[#1a3a2a] text-center">
+        <h2 className="mb-8 text-[68px] font-medium text-[var(--color-text-primary)] text-center">
           Ready to get started?
         </h2>
         

@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  /* Backgrounds #fbf6f1 #E5E0DA #c2bfcb*/
-  --color-background: #fbf6f1;
-  --color-surface: #ffffff;
-  --color-secondary: #E5E0DA;
-  --color-lavender: #c2bfcb;
+  /* Backgrounds: Warm Taupe/Beige -- Distinctly Non-White */
+  --color-background: #F2EBE5;
+  --color-surface: #FFFFFF;
+  --color-secondary: #E1D6CD;
+  --color-lavender: #C8B7AD;
 
-  /* Text */
-  --color-text-primary: #223614;
-  --color-black: #1a1a1a;
+  /* Text: Dark Warm Brown */
+  --color-text-primary: #4A3B32;
+  --color-black: #2E241F;
 
-  /* Accent #7E7B46*/
-  --color-accent: #7E7B46;
+  /* Accent: Dark Espresso - Rich & Monochrome */
+  --color-accent: #765547;
   
   /* Borders */
   --color-border: #223614; 

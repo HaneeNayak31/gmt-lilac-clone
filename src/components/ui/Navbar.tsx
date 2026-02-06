@@ -67,8 +67,8 @@ const Navbar = () => {
           backgroundColor: isAtTop
             ? "transparent"
             : pathname === "/contact"
-            ? "#c2bfcb"
-            : "#fbf6f1",
+            ? "var(--color-lavender)"
+            : "var(--color-background)",
         }}
       >
         <div className="mx-auto max-w-full px-6 lg:px-10 py-3">
@@ -76,9 +76,9 @@ const Navbar = () => {
             {/* Logo */}
             <Link
               href="/"
-              className="text-4xl md:text-[34px] font-medium text-[#1a3a2a] tracking-normal pl-5 outline-none border-none focus:outline-none ring-0 focus:ring-0"
+              className="text-4xl md:text-[34px] font-medium text-[var(--color-text-primary)] tracking-normal pl-5 outline-none border-none focus:outline-none ring-0 focus:ring-0"
             >
-              Lilac Template
+              Dr. Maya Reynolds
             </Link>
 
             {/* RIGHT SIDE: Nav + Actions + Hamburger */}
@@ -88,16 +88,16 @@ const Navbar = () => {
               <nav className="hidden md:flex gap-14 items-center">
                 <Link
                   href="/blog"
-                  className={`text-[#1a3a2a] text-xl font-normal transition-opacity hover:opacity-70 ${
-                    isActive("/blog") ? "border-b-[1.5px] border-[#1a3a2a] pb-1" : ""
+                  className={`text-[var(--color-text-primary)] text-xl font-normal transition-opacity hover:opacity-70 ${
+                    isActive("/blog") ? "border-b-[1.5px] border-[var(--color-text-primary)] pb-1" : ""
                   }`}
                 >
                   Blog
                 </Link>
                 <Link
                   href="/contact"
-                  className={`text-[#1a3a2a] text-xl font-normal transition-opacity hover:opacity-70 ${
-                    isActive("/contact") ? "border-b-[1.5px] border-[#1a3a2a] pb-1" : ""
+                  className={`text-[var(--color-text-primary)] text-xl font-normal transition-opacity hover:opacity-70 ${
+                    isActive("/contact") ? "border-b-[1.5px] border-[var(--color-text-primary)] pb-1" : ""
                   }`}
                 >
                   Contact
@@ -116,9 +116,9 @@ const Navbar = () => {
               >
                 <div className="burger-box">
                   <div className="burger-inner header-menu-icon-doubleLineHamburger flex flex-col gap-[6px]">
-                    <div className={`top-bun w-8 h-[1px] bg-[#1a3a2a] transition-transform duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-[7px]" : ""}`}></div>
-                    <div className={`patty w-8 h-[1px] bg-[#1a3a2a] transition-opacity duration-300 ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`}></div>
-                    <div className={`bottom-bun w-8 h-[1px] bg-[#1a3a2a] transition-transform duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`}></div>
+                    <div className={`top-bun w-8 h-[1px] bg-[var(--color-text-primary)] transition-transform duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-[7px]" : ""}`}></div>
+                    <div className={`patty w-8 h-[1px] bg-[var(--color-text-primary)] transition-opacity duration-300 ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`}></div>
+                    <div className={`bottom-bun w-8 h-[1px] bg-[var(--color-text-primary)] transition-transform duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`}></div>
                   </div>
                 </div>
               </button>
@@ -129,7 +129,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-[#fbf6f1] flex flex-col justify-center items-center transition-opacity duration-300 ${
+        className={`fixed inset-0 z-40 bg-[var(--color-background)] flex flex-col justify-center items-center transition-opacity duration-300 ${
           isMobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -139,14 +139,14 @@ const Navbar = () => {
           <Link
             href="/blog"
             onClick={toggleMobileMenu}
-            className="text-[#1a3a2a] text-4xl font-medium hover:opacity-70 transition-opacity"
+            className="text-[var(--color-text-primary)] text-4xl font-medium hover:opacity-70 transition-opacity"
           >
             Blog
           </Link>
           <Link
             href="/contact"
             onClick={toggleMobileMenu}
-            className="text-[#1a3a2a] text-4xl font-medium hover:opacity-70 transition-opacity"
+            className="text-[var(--color-text-primary)] text-4xl font-medium hover:opacity-70 transition-opacity"
           >
             Contact
           </Link>

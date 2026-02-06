@@ -3,23 +3,30 @@ import Link from "next/link";
 
 const FooterSection = () => {
   return (
-    <footer className="w-full text-[var(--color-text-primary)] font-[var(--font-gopher)]">   
+    <footer className="w-full bg-[var(--color-secondary)] text-[var(--color-text-primary)] font-[var(--font-gopher)]">   
 
 
       {/* Bottom Bar: Legal & Credits */}
-      <div className="bg-[var(--color-secondary)] py-8 text-center text-[16px]">
-         <div className="flex flex-wrap justify-center gap-6 mb-4 px-6">
-            <Link href="#" className="underline decoration-1 underline-offset-4 hover:opacity-70">Privacy & Cookies Policy</Link>
-            <Link href="#" className="underline decoration-1 underline-offset-4 hover:opacity-70">Good Faith Estimate</Link>
-            <Link href="#" className="underline decoration-1 underline-offset-4 hover:opacity-70">Terms & Conditions</Link>
-            <Link href="#" className="underline decoration-1 underline-offset-4 hover:opacity-70">Disclaimer</Link>
-         </div>
-         <div className="px-6">
-            <span>Website Template Credits: </span>
-            <Link href="#" className="underline decoration-1 underline-offset-4 hover:opacity-70">Go Bloom Creative</Link>
-         </div>
-         <div className="mt-10 px-6">
-            All Rights Reserved © 2024 Your Business Name Here, LLC.
+      <div className="border-t border-[var(--color-text-primary)]/20 py-8 text-[14px] opacity-80">
+         <div className="mx-auto max-w-[1420px] px-6 flex flex-col items-center gap-4">
+            
+            {/* Copyright */}
+            <div className="text-center">
+               © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All Rights Reserved.
+            </div>
+
+            {/* Legal Links */}
+            <div className="flex gap-6">
+               <Link href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
+               <Link href="#" className="hover:opacity-100 transition-opacity">Terms of Service</Link>
+            </div>
+
+            {/* Credits */}
+            <div className="text-[16px] text-center">
+                <span className="opacity-70 text-[12px] uppercase tracking-wider mr-2">Designed by</span>
+                <Link href="#" className="border-b border-[var(--color-text-primary)] pb-0.5 hover:opacity-60 transition-opacity font-medium">Hanee Nayak</Link>
+            </div>
+            
          </div>
       </div>
     </footer>

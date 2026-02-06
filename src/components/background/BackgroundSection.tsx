@@ -3,19 +3,19 @@ import React, { useState } from "react";
 
 const backgroundItems = [
   {
-    title: "Education",
+    title: "My Approach",
     content:
-      "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea.",
+      "I take a warm, collaborative, and grounded approach to therapy. Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. I integrate evidence-based methods such as CBT, EMDR, and mindfulness.",
   },
   {
-    title: "Licensure",
+    title: "Trauma Work",
     content:
-      "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea.",
+      "Trauma work is an important part of my practice. I work with adults who have experienced single-incident trauma as well as more complex patterns. My approach is paced carefully, emphasizing safety and stabilization.",
   },
   {
-    title: "Certifications",
+    title: "Who I Work With",
     content:
-      "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea.",
+      "I frequently support clients dealing with professional burnout, perfectionism, and high internal pressure. Many are entrepreneurs, creatives, or professionals who feel disconnected from themselves after years of pushing through stress.",
   },
 ];
 
@@ -27,7 +27,7 @@ const BackgroundSection = () => {
   };
 
   return (
-    <section className="w-full bg-[var(--color-secondary)] px-6 py-[100px] font-[var(--font-gopher)]">
+    <section className="w-full bg-[var(--color-background)] px-6 py-[100px] font-[var(--font-gopher)]">
       <div className="mx-auto max-w-[900px]">
         <h3 className="mb-[50px] text-center text-[32px] md:text-[40px] font-medium text-[var(--color-text-primary)] leading-tight font-[var(--font-gopher)]">
           My Professional Background

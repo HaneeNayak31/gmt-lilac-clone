@@ -4,24 +4,24 @@ import Link from "next/link";
 
 const posts = [
   {
-    title: "Blog Post One",
-    date: "3/11/19",
-    image: "https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/87fa2310-36df-4a24-a9e9-1b74df73f150/tanya-trukyr-ornZV1YJNNo-unsplash.jpg?format=2500w",
+    title: "Understanding High-Functioning Anxiety",
+    date: "10/24/23",
+    image: "https://images.unsplash.com/photo-1618616191524-a9721186cbe4?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Blog Post Two",
-    date: "3/11/19",
-    image: "https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/a77b422e-33ac-47b2-825f-293d33884041/valeriia-miller-5jR4rAMs5tk-unsplash+%281%29.jpg?format=2500w",
+    title: "Navigating Relationship Dynamics",
+    date: "11/15/23",
+    image: "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Blog Post Three",
-    date: "3/11/19",
-    image: "https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/9f889e1b-ba2b-4a6d-92e9-767dd3db67ae/lilac+template+white+lilac.jpeg?format=2500w",
+    title: "The Role of Mindfulness in Healing",
+    date: "12/02/23",
+    image: "https://plus.unsplash.com/premium_photo-1713720411896-795853998a58?q=80&w=1088&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Blog Post Four",
-    date: "3/11/19",
-    image: "https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/9a77a6f2-1c50-4582-a5c1-5ec0dc2e94e8/daiga-ellaby-Ct6LBZHaOSc-unsplash.jpg?format=2500w",
+    title: "Breaking the Cycle of Burnout",
+    date: "01/10/24",
+    image: "https://plus.unsplash.com/premium_photo-1665203618989-e04554a539b1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -44,12 +44,12 @@ const BlogPosts = () => {
             </div>
             
             {/* Content */}
-            <div className="flex flex-col items-start text-[#223614]">
+            <div className="flex flex-col items-start text-[var(--color-surface)]">
               {/* Date */}
               <span className="text-sm font-semibold mb-4 block tracking-wide">{post.date}</span>
               
               {/* Title - Text 6xl to match reference impact */}
-              <h3 className="text-6xl font-medium mb-8 tracking-tight leading-tight">{post.title}</h3>
+              <h3 className="text-6xl font-medium mb-8 tracking-tight leading-tight !text-[var(--color-success)]">{post.title}</h3>
               
               {/* Read More Link */}
               <Link href="#" className="text-lg font-medium underline underline-offset-4 decoration-1 hover:text-opacity-80 inline-block pb-2">
