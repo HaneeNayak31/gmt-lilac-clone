@@ -49,7 +49,7 @@ const BlogPosts = () => {
               <span className="text-sm font-semibold mb-4 block tracking-wide">{post.date}</span>
               
               {/* Title - Text 6xl to match reference impact */}
-              <h3 className="text-6xl font-medium mb-8 tracking-tight leading-tight !text-[var(--color-success)]">{post.title}</h3>
+              <h3 className="text-5xl font-medium mb-8 tracking-tight leading-tight !text-[var(--color-success)]">{post.title}</h3>
               
               {/* Read More Link */}
               <Link href="#" className="text-lg font-medium underline underline-offset-4 decoration-1 hover:text-opacity-80 inline-block pb-2">

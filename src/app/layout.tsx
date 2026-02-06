@@ -31,6 +31,12 @@ const gopher = localFont({
   variable: "--font-gopher",
 });
 
+export const metadata = {
+  title: "Dr. Maya Reynolds | Clinical Psychologist Santa Monica",
+  description: "Compassionate therapy for anxiety, trauma, and burnout. Dr. Maya Reynolds offers individual and couples counseling in Santa Monica, CA. Schedule a free consultation.",
+  keywords: ["Psychologist", "Santa Monica", "Anxiety Therapy", "Trauma", "Burnout", "Mental Health", "Counseling"],
+};
+
 export default function RootLayout({
   children,
 }: {

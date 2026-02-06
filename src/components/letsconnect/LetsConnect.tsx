@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const LetsConnect = () => {
   return (
-    <section className="w-full min-h-screen bg-[var(--color-background)] py-20 lg:py-26 text-[var(--color-primary)] overflow-hidden">
+    <section className="w-full min-h-screen bg-[var(--color-background)] py-20 lg:py-18 text-[var(--color-primary)] overflow-hidden">
       <div className="mx-10 max-w-[1700px]">
         {/* 24-column grid for desktop to match the precision of the design */}
         <div className="grid grid-cols-1 lg:grid-cols-24 gap-4 relative">

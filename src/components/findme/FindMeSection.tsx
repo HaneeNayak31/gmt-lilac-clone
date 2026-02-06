@@ -49,6 +49,7 @@ const FindMeSection = () => {
             <Link
               href="#"
               key={index}
+              aria-label={`View Instagram post ${index + 1}`}
               className="relative aspect-square w-full overflow-hidden group block cursor-pointer"
             >
               {/* Image */}
