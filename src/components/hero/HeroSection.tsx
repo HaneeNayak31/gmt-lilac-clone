@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 xl:grid-cols-[50%_50%] items-center">
           
           {/* LEFT IMAGE */}
-          <div className={`relative flex justify-center xl:justify-start pt-18 xl:pt-28 ${isVisible ? 'slideIn' : 'preSlide'}`}>
+          <div className={`relative flex justify-center xl:justify-start pt-32 xl:pt-28 ${isVisible ? 'slideIn' : 'preSlide'}`}>
             <div className="relative xl:-translate-x-24">
               <div className="overflow-hidden rounded-t-full w-[85vw] max-w-[500px] md:w-[500px] xl:w-[560px] h-[500px] md:h-[800px] relative">
                 <Image

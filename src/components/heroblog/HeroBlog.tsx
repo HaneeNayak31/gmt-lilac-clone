@@ -8,7 +8,7 @@ const HeroBlog = () => {
   const { elementRef, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={elementRef} className="pt-20 lg:pt-30 w-full bg-[var(--color-background)] text-[var(--color-text-primary)] pb-[100px] px-6">
+    <section ref={elementRef} className="pt-32 lg:pt-30 w-full bg-[var(--color-background)] text-[var(--color-text-primary)] pb-[100px] px-6">
       <div className="mx-auto max-w-[1420px] grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-8 xl:gap-0">
         
         {/* Left Column: Arched Image */}
