@@ -24,8 +24,8 @@ const config: Config = {
         '25': '25',
       },
       fontFamily: {
-        serif: ["var(--font-gopher)", "serif"],
-        sans: ["var(--font-gopher)", "sans-serif"],
+        serif: ["var(--font-outfit)", "serif"],
+        sans: ["var(--font-outfit)", "sans-serif"],
       },
        colors: {
         background: "var(--background)",

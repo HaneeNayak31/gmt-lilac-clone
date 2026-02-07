@@ -1,15 +1,20 @@
+"use client";
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
 const IntroSection = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   return (
-    <section className="w-full bg-[var(--color-background)] text-[var(--color-text-primary)] font-[var(--font-gopher)] pt-16 lg:pt-25 pb-20 lg:pb-45">
+    <section ref={elementRef} className="w-full bg-[var(--color-background)] text-[var(--color-text-primary)] pt-16 lg:pt-25 pb-20 lg:pb-45">
       <div className="mx-auto max-w-[1420px] px-6">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 items-center lg:items-start gap-10 lg:gap-0">
           
           {/* Text Content */}
-          <div className="flex flex-col justify-center animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-forwards max-w-[650px] mx-auto lg:ml-10" style={{ animationDelay: '0.2s' }}>
+          <div className={`flex flex-col justify-center max-w-[650px] mx-auto lg:ml-10 ${isVisible ? 'slideIn' : 'preSlide'}`}>
             <h2 className="mb-6 lg:mb-8 text-[32px] md:text-[53px] font-medium leading-[1.1] text-[var(--color-text-primary)] tracking-tight text-center lg:text-left">
               Hi, I&rsquo;m Dr. Maya.
             </h2>
@@ -24,7 +29,7 @@ const IntroSection = () => {
         </div>
 
         {/* RIGHT IMAGES */}
-        <div className="relative flex justify-center lg:justify-center mt-0 mb-10 lg:mb-0 min-h-[400px] lg:min-h-[600px]">
+        <div className={`relative flex justify-center lg:justify-center mt-0 mb-10 lg:mb-0 min-h-[400px] lg:min-h-[600px] ${isVisible ? 'fadeIn delay-200' : 'preFade'}`}>
           <div className="relative w-full max-w-[550px]">
             {/* Main Arch Image */}
             <div className="relative h-[500px] lg:h-[600px] w-[85vw] max-w-[400px] lg:w-[400px] overflow-hidden rounded-t-[200px] z-10 mx-auto lg:ml-10">

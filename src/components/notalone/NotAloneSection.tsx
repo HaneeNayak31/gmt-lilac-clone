@@ -1,17 +1,22 @@
 
+"use client";
+
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { useScrollAnimation } from "@/hooks/useScrollAnimation"
 
 const NotAloneSection = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   return (
-    <section className="w-full bg-[var(--color-accent)] text-white">
+    <section ref={elementRef} className="w-full bg-[var(--color-accent)] text-white">
       <div className="flex flex-col md:grid md:grid-cols-2 min-h-[695px]">
         
         {/* LEFT: IMAGE */}
-        <div className="relative h-[500px] md:h-full w-full">
+        <div className={`relative h-[500px] md:h-full w-full ${isVisible ? 'fadeIn' : 'preFade'}`}>
             <Image
-                 src="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?auto=format&fit=crop&w=800&q=80"
+                 src="https://images.unsplash.com/photo-1758273240360-76b908e7582a?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                  alt="You don't have to do this all alone"
                  fill
                  className="object-cover"
@@ -23,47 +28,47 @@ const NotAloneSection = () => {
         <div className="flex flex-col justify-between items-center md:items-stretch text-[var(--color-surface)] md:border-l border-transparent md:border-white/0">
             
             {/* Main Content (Centered) */}
-            <div className="flex flex-col justify-center flex-grow  px-6 md:px-10 xl:px-20 py-16 md:py-16">
+            <div className={`flex flex-col justify-center flex-grow  px-6 md:px-10 xl:px-20 py-16 md:py-16 ${isVisible ? 'slideIn delay-200' : 'preSlide'}`}>
                 <div className="w-full max-w-[680px] mx-auto md:mx-0">
                     <h2 className="text-[40px] md:text-[40px] xl:text-[50px] font-medium leading-[1.05] mb-[32px] tracking-tight !text-[var(--color-surface)]">
                         You don&apos;t have to do this all <em>alone</em>.
                     </h2>
                     
-                    <p className="text-[18px] md:text-[19.7px] leading-[1.6] mb-[24px] font-[var(--font-gopher)] text-[var(--color-surface)] font-normal preFade fadeIn">
+                    <p className="text-[18px] md:text-[19.7px] leading-[1.6] mb-[24px] text-[var(--color-surface)] font-normal">
                         Many of the people I work with are high-achieving, thoughtful, and self-aware—but internally feel exhausted, stuck in overthinking, or emotionally on edge.
                     </p>
 
                     <ul className="mb-[32px] space-y-3 text-[18px] md:text-[19.7px] text-[var(--color-surface)] leading-relaxed pl-5">
                        <li className="flex items-start gap-3">
                         <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-surface)]" />
-                        <span className="preFade fadeIn">Feeling successful on paper, but empty inside</span>
+                        <span>Feeling successful on paper, but empty inside</span>
                        </li>
                        <li className="flex items-start gap-3">
                         <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-surface)]" />
-                        <span className="preFade fadeIn">Constant worry that worst-case scenarios will happen</span>
+                        <span>Constant worry that worst-case scenarios will happen</span>
                        </li>
                        <li className="flex items-start gap-3">
                         <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-surface)]" />
-                         <span className="preFade fadeIn">Difficulty setting boundaries with work or family</span>
+                         <span>Difficulty setting boundaries with work or family</span>
                        </li>
                        <li className="flex items-start gap-3">
                         <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-surface)]" />
-                         <span className="preFade fadeIn">Physical symptoms of stress like tension or fatigue</span>
+                         <span>Physical symptoms of stress like tension or fatigue</span>
                        </li>
                        <li className="flex items-start gap-3">
                         <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-surface)]" />
-                         <span className="preFade fadeIn">Feeling lonely, even when surrounded by others</span>
+                         <span>Feeling lonely, even when surrounded by others</span>
                        </li>
                     </ul>
 
-                    <p className="text-[18px] md:text-[19.7px] leading-[1.6] font-[var(--font-gopher)] text-[var(--color-surface)] font-normal preFade fadeIn">
+                    <p className="text-[18px] md:text-[19.7px] leading-[1.6] text-[var(--color-surface)] font-normal">
                          With empathy and guidance, we&apos;ll work together to navigate the challenges life throws your way.
                     </p>
                 </div>
             </div>
 
             {/* CTA Button (Bottom) */}
-            <div className="w-full border-t border-[var(--color-surface)]">
+            <div className={`w-full border-t border-[var(--color-surface)] ${isVisible ? 'fadeIn delay-300' : 'preFade'}`}>
                 <Link href="/contact" className="w-full block">
                  <button className="w-full py-6 text-[14px] font-medium uppercase tracking-normal transition-all duration-300 ease-in-out flex justify-center items-center  hover:bg-[var(--color-text-primary)] text-[var(--color-surface)]">
                     Work with me &nbsp; &rarr;

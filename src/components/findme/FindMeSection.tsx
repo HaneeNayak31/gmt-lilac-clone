@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const images = [
-  "https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/9a77a6f2-1c50-4582-a5c1-5ec0dc2e94e8/daiga-ellaby-Ct6LBZHaOSc-unsplash.jpg?format=750w",
-  "https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/515651b9-4001-47ae-8ca1-2a6ff8f2bef0/ivana-cajina--wn1PECo5-U-unsplash.jpg?format=750w",
-  "https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/87fa2310-36df-4a24-a9e9-1b74df73f150/tanya-trukyr-ornZV1YJNNo-unsplash.jpg?format=750w",
-  "https://images.squarespace-cdn.com/content/v1/65d10c6adcfabe1819ed4e07/08197a74-c045-4a19-a7c9-0f85c1032bc4/daiga-ellaby-M2P08N9zi2k-unsplash.jpg?format=750w",
+  "https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=800&q=80", // Lilac flowers
+  "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80", // Book aesthetic
+  "https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?auto=format&fit=crop&w=800&q=80", // Soft clouds/sky
+  "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=800&q=80", // Calming water
 ];
 
 const InstagramIcon = () => (
@@ -27,7 +27,7 @@ const InstagramIcon = () => (
 
 const FindMeSection = () => {
   return (
-    <section className="w-full bg-[var(--color-accent)] py-20 lg:py-32 font-[var(--font-gopher)]">
+    <section className="w-full bg-[var(--color-accent)] py-20 lg:py-32">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-20 mb-32">
         
         {/* Header */}
