@@ -9,6 +9,7 @@ import GetStarted from "@/components/getstarted/GetStarted";
 import FAQSection from "@/components/faq/FAQSection";
 import BackgroundSection from "@/components/background/BackgroundSection";
 import ContactSection from "@/components/contact/ContactSection";
+import MyOfficeSection from "@/components/myoffice/MyOfficeSection";
 export default function Home() {
   return (
     <main className="flex flex-col w-full">

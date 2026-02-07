@@ -6,10 +6,10 @@ import Link from "next/link"
 const NotAloneSection = () => {
   return (
     <section className="w-full bg-[var(--color-accent)] text-white">
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[695px]">
+      <div className="flex flex-col md:grid md:grid-cols-2 min-h-[695px]">
         
         {/* LEFT: IMAGE */}
-        <div className="relative h-[500px] lg:h-full w-full">
+        <div className="relative h-[500px] md:h-full w-full">
             <Image
                  src="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?auto=format&fit=crop&w=800&q=80"
                  alt="You don't have to do this all alone"
@@ -20,12 +20,12 @@ const NotAloneSection = () => {
         </div>
 
         {/* RIGHT: TEXT & CTA */}
-        <div className="flex flex-col justify-between items-center lg:items-stretch text-[var(--color-surface)] lg:border-l border-transparent lg:border-white/0">
+        <div className="flex flex-col justify-between items-center md:items-stretch text-[var(--color-surface)] md:border-l border-transparent md:border-white/0">
             
             {/* Main Content (Centered) */}
-            <div className="flex flex-col justify-center flex-grow px-6 lg:px-20 py-20 lg:py-0">
-                <div className="w-full max-w-[680px] mx-auto lg:mx-0">
-                    <h2 className="text-[40px] md:text-[53px] lg:text-[50px] font-medium leading-[1.05] mb-[32px] tracking-tight !text-[var(--color-surface)]">
+            <div className="flex flex-col justify-center flex-grow  px-6 md:px-10 xl:px-20 py-16 md:py-16">
+                <div className="w-full max-w-[680px] mx-auto md:mx-0">
+                    <h2 className="text-[40px] md:text-[40px] xl:text-[50px] font-medium leading-[1.05] mb-[32px] tracking-tight !text-[var(--color-surface)]">
                         You don&apos;t have to do this all <em>alone</em>.
                     </h2>
                     

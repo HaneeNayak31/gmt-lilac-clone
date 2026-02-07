@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const OfficeSection = () => {
   return (
-    <section className="w-full bg-[var(--color-secondary)] py-[100px] lg:py-[140px] px-6 font-[var(--font-gopher)] relative overflow-hidden">
+    <section className="w-full bg-[var(--color-secondary)] py-[90px] lg:py-[120px] px-6 font-[var(--font-gopher)] relative overflow-hidden">
       <div className="mx-auto max-w-[1420px] grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         
         {/* LEFT: Text Content */}

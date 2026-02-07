@@ -33,12 +33,12 @@ const BackgroundSection = () => {
           My Professional Background
         </h3>
 
-        <div className="flex flex-col border-t border-[var(--color-text-primary)] w-[700px] ml-25">
+        <div className="flex flex-col border-t border-[var(--color-text-primary)] w-full max-w-[700px] mx-auto lg:ml-25">
           {backgroundItems.map((item, index) => (
-            <div key={index} className="border-b border-[var(--color-text-primary)] w-[700px]">
+            <div key={index} className="border-b border-[var(--color-text-primary)] w-full">
               <button
                 onClick={() => toggleItem(index)}
-                className="flex w-[700px] cursor-pointer items-center justify-between py-[20px] transition-all duration-300 ease-in-out hover:opacity-70 group"
+                className="flex w-full cursor-pointer items-center justify-between py-[20px] transition-all duration-300 ease-in-out hover:opacity-70 group"
               >
                 <span className="text-[20px] md:text-[24px] font-normal ">
                   {item.title}
